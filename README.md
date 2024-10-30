@@ -1,1 +1,3 @@
-# agentic-semantic-layer
+# Towards Agentic Schema Refinement
+
+Code available soon.
