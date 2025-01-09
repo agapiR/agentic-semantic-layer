@@ -1,3 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Other
 OAI_CONFIG_LIST
 SNOWFLAKE_CONFIG
 debug.jsonl
+.cache/
+autogen_logs/
+
