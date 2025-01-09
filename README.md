@@ -26,7 +26,7 @@ conda env create -f environment.yml
 
 ## Setup
 
-- We use OpenAI for our LLM agents. You will need to configure the OpenAI credentials. Copy OAI_CONFIG_LIST_sample to ./notebook folder, name to OAI_CONFIG_LIST, and set the correct configuration.
+- We use OpenAI for our LLM agents. You will need to configure the OpenAI credentials. Copy OAI_CONFIG_LIST_sample, name to OAI_CONFIG_LIST, and set the correct configuration.
 
 ## Contact
 Your support in improving this work is greatly appreciated! If you have any questions or feedback, please send an email to rissaki.a@northeastern.edu.
