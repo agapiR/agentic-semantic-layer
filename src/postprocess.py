@@ -3,9 +3,9 @@ import re
 import json
 import argparse
 import autogen
-from database import SQLiteDatabase
-from process_sql import Schema, get_sql
-from database_utils import get_view_name_from_definition
+from .database import SQLiteDatabase
+from .process_sql import Schema, get_sql
+from .database_utils import get_view_name_from_definition
 
 
 def get_llm_assistant():

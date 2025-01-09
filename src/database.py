@@ -7,7 +7,7 @@ import sqlalchemy
 import sqlalchemy_schemadisplay
 import snowflake.connector
 import networkx as nx
-from database_utils import get_view_name_from_definition
+from .database_utils import get_view_name_from_definition
 
 ################################
 # TODO: Implement a Database class that can be used to interact with the database

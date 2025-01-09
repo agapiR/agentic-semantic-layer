@@ -5,9 +5,9 @@ import argparse
 import autogen
 from typing import List
 from autogen.coding import LocalCommandLineCodeExecutor, MarkdownCodeExtractor
-from database import SQLiteDatabase
-from database_utils import get_view_name_from_definition
-from graph import schema_subgraph
+from .database import SQLiteDatabase
+from .database_utils import get_view_name_from_definition
+from .graph import schema_subgraph
 
 
 def extract_codeblock_from_message_history(chat_history):
