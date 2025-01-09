@@ -1,0 +1,11 @@
+{
+    "database_name": {
+                "account": "<your account name here>",
+                "user": "<your email here>",
+                "password": "<your password here>",
+                "role": "<role>",
+                "warehouse": "<warehouse>",
+                "database": "<database name>",
+                "schema": "<schema name>"
+            }
+}
