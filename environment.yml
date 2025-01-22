@@ -1,4 +1,3 @@
-# name: autogenv4
 name: agentic-semantic-layer
 channels:
   - defaults
@@ -9,19 +8,19 @@ dependencies:
   - pandas
   - matplotlib
   - seaborn
-  - scikit-learn
   - jupyter
   - ipykernel
   - networkx
   - sqlalchemy
   - sqlalchemy_schemadisplay
   - pygraphviz
+  - scikit-learn
   - scipy
+  - hdbscan
   - nltk
   - pip
   - pip:
+      # - autogen-agentchat~=0.2 , to use the stable 0.2 version of autogen
       - pyautogen[all]
       - flaml==2.2.0
       - snowflake-connector-python
-      # - transformers
-      # - autogen-agentchat~=0.2 , to use the 0.2 version of autogen
