@@ -1,13 +1,15 @@
-import os
 import yaml
 import json
 import argparse
 import autogen
 from typing import List
 from autogen.coding import LocalCommandLineCodeExecutor, MarkdownCodeExtractor
-from .database import SQLiteDatabase
-from .database_utils import get_view_name_from_definition
-from .graph import schema_subgraph
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from src.database import SQLiteDatabase
+from src.database_utils import get_view_name_from_definition
+from src.graph import schema_subgraph
 
 
 def extract_codeblock_from_message_history(chat_history):

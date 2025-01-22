@@ -1,4 +1,3 @@
-import os
 import re
 import json
 import random
@@ -7,26 +6,10 @@ import sqlalchemy
 import sqlalchemy_schemadisplay
 import snowflake.connector
 import networkx as nx
-from .database_utils import get_view_name_from_definition
-
-################################
-# TODO: Implement a Database class that can be used to interact with the database
-# The class should have the following methods:
-# - schema_dictionary: Get the schema of the database in a dictionary format,
-#                       where keys are table names and values are lists of column names
-# - schema_wording: Get the schema of the database in a textualized format.
-#                       The schema includes the table names, column names, column types, primary keys, and foreign keys.
-#                       If include_sample_data is set to True, the schema will also include sample data from the tables.
-# - schema_graph: Generate a networkx graph object representing the schema of the database. 
-#                     (every node represents a table and has id and description / label)
-#                     (every edge represents a foreign key relationship between two tables, has source and target ids and description / label)
-# - materialize_view: Materialize a view in the database.
-#                     The method should take the view definition as input and return a message indicating the success or failure of the operation.
-#                     The method should also have an option to persist the materialized view after the operation is complete.
-# Optional methods:
-# - schema_image: Generate an image of the schema of the database.
-################################
-
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from src.database_utils import get_view_name_from_definition
 
 class Database:
     def __init__(self, database_name):
