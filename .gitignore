@@ -6,10 +6,15 @@ __pycache__/
 # C extensions
 *.so
 
-# Other
+# Credentials
 OAI_CONFIG_LIST
 SNOWFLAKE_CONFIG
-debug.jsonl
-.cache/
+
+# Logs
 autogen_logs/
 
+# Data
+workspace/
+
+# Other
+.*
